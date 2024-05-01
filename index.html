@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Luxury Hotel & Resort</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <div class="flex">
+      <a href="#home" class="logo">The luxury hotel and Resort</a>
+      <a href="#availability" class="btn">check for rooms</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+   <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#reservation">Reservation</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#reviews">Reviews</a>
+   </nav>
+
+</section>
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-3.jpg" alt="">
+            <div class="flex">
+               <h3>Check out our luxurious rooms</h3>
+               <a href="#availability" class="btn">Check availability</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-1.jpg" alt="">
+            <div class="flex">
+               <h3>Luxurious halls</h3>
+               <a href="#contact" class="btn">Contact us</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-2.jpg" alt="">
+            <div class="flex">
+               <h3>Foods & Drinks</h3>
+               <a href="#reservation" class="btn">Make a reservation</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+
+<section class="availability" id="availability">
+
+   <form action="" method="post">
+      <div class="flex">
+         <div class="box">
+            <p>Check in date<span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>Check out date<span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Childs <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="check availability" name="check" class="btn">
+   </form>
+
+</section>
+
+
+<section class="about" id="about">
+
+   <div class="row">
+      <div class="image">
+         <img src="images/about-img-1.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Best Staff</h3>
+         <p>Our dedicated staff is committed to providing you with the highest level of service. From the moment you arrive until your departure, expect nothing but excellence and personalized attention to ensure your stay is memorable.</p>
+         <a href="#reservation" class="btn">make a reservation</a>
+      </div>
+   </div>
+
+   <div class="row revers">
+      <div class="image">
+         <img src="images/about-img-2.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Exquisite Cuisine</h3>
+         <p>Indulge in a culinary journey with our delectable food and drinks. From gourmet meals to refreshing beverages, our chefs craft each dish with passion and creativity, promising a gastronomic experience like no other.</p>
+         <a href="#contact" class="btn">Contact Us</a>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="image">
+         <img src="images/about-img-3.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>Relaxing Amenities</h3>
+         <p>Unwind and rejuvenate by our serene swimming pool. Whether you seek a refreshing dip or simply wish to bask under the sun, our poolside oasis offers the perfect escape for relaxation and leisure.</p>
+         <a href="#availability" class="btn">check availability</a>
+      </div>
+   </div>
+
+</section>
+
+
+<section class="services">
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/icon-1.png" alt="">
+         <h3>Food & Drinks</h3>
+         <p>Embark on a culinary adventure with our diverse selection of cuisines and beverages, prepared with the finest ingredients to tantalize your taste buds.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-2.png" alt="">
+         <h3>Outdoor Dining</h3>
+         <p>Experience al fresco dining like never before. With picturesque views and exquisite dishes, enjoy a memorable dining experience under the open sky.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-3.png" alt="">
+         <h3>Beach View</h3>
+         <p>Immerse yourself in the breathtaking beauty of the coastline. Our resort offers stunning views of the beach, providing a tranquil backdrop for your getaway.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-4.png" alt="">
+         <h3>Decorations</h3>
+         <p>Elevate your event with our exquisite decorations. Whether it's a wedding or a corporate gathering, our attention to detail ensures a memorable and elegant affair.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-5.png" alt="">
+         <h3>Swimming Pool</h3>
+         <p>Escape the heat and take a dip in our luxurious swimming pool. Surrounded by lush greenery, it's the perfect spot to relax and unwind.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/icon-6.png" alt="">
+         <h3>Resort Beach</h3>
+         <p>Step onto the soft sands of our private beach. Whether you're soaking up the sun or taking a leisurely stroll, our beach offers serenity and seclusion.</p>
+      </div>
+
+   </div>
+
+</section>
+
+
+<section class="reservation" id="reservation">
+
+   <form action="" method="post">
+      <h3>Make a Reservation</h3>
+      <div class="flex">
+         <div class="box">
+            <p>Check In <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>Check Out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>Adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Children <span>*</span></p>
+            <select name="children" class="input" required>
+               <option value="-">0 children</option>
+               <option value="1">1 child</option>
+               <option value="2">2 children</option>
+               <option value="3">3 children</option>
+               <option value="4">4 children</option>
+               <option value="5">5 children</option>
+               <option value="6">6 children</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>Rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="Check Availability" name="check" class="btn">
+   </form>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/gallery-img-1.jpg" class="swiper-slide" alt="">
+         <img src="images/gallery-img-2.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-3.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-4.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-5.webp" class="swiper-slide" alt="">
+         <img src="images/gallery-img-6.webp" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+
+
+<section class="contact" id="contact">
+
+   <div class="row">
+
+      <form action="" method="post">
+         <h3>Send Us a Message</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+         <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="enter your number" class="box">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="enter your message" cols="30" rows="10"></textarea>
+         <input type="submit" value="send message" name="send" class="btn">
+      </form>
+
+      <div class="faq">
+         <h3 class="title">Frequently Asked Questions</h3>
+         <div class="box active">
+            <h3>How to Cancel?</h3>
+            <p>Cancellations can be made up to 24 hours before the check-in date to avoid any charges. Please contact our reservation team for assistance.</p>
+         </div>
+         <div class="box">
+            <h3>Is There Any Vacancy?</h3>
+            <p>Our availability varies depending on the season. Please check our website or contact us directly for current vacancy information.</p>
+         </div>
+         <div class="box">
+            <h3>What Are Payment Methods?</h3>
+            <p>We accept all major credit cards as well as cash payments. Online payment options are also available for your convenience.</p>
+         </div>
+         <div class="box">
+            <h3>How to Claim Coupon Codes?</h3>
+            <p>To redeem coupon codes, simply enter the code during the booking process or present it at the time of check-in.</p>
+         </div>
+         <div class="box">
+            <h3>What Are the Age Requirements?</h3>
+            <p>Guests must be at least 18 years old to book a room. Any guests under the age of 18 must be accompanied by an adult.</p>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+
+
+<section class="reviews" id="reviews">
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+         <div class="swiper-slide box">
+            <img src="images/pic-1.jpg" alt="">
+            <h3>John Abraham</h3>
+            <p>"A wonderful experience! The staff was friendly and attentive, the food was delicious, and the amenities were top-notch. Will definitely be returning!"</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-2.jpg" alt="">
+            <h3>Jane Smith</h3>
+            <p>"Absolutely loved my stay here. The room was spacious and comfortable, and the beach view was breathtaking. Highly recommend!"</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-3.jpg" alt="">
+            <h3>Michael Johnson</h3>
+            <p>"Fantastic service and beautiful surroundings. Perfect for a weekend getaway or a longer vacation. Can't wait to come back!"</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-1.jpg" alt="">
+            <h3>Suis Brown</h3>
+            <p>"An unforgettable experience! The staff went above and beyond to ensure our stay was enjoyable. Will definitely be recommending to friends and family!"</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-2.jpg" alt="">
+            <h3>Robert Taylor</h3>
+            <p>"Absolutely loved every moment of my stay here. From the luxurious rooms to the stunning views, everything exceeded my expectations. Can't wait to return!"</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="images/pic-3.jpg" alt="">
+            <h3>Emda Wilson</h3>
+            <p>"The perfect getaway! The resort offers everything you could possibly need for a relaxing and enjoyable vacation. Highly recommend to anyone looking for a luxurious escape!"</p>
+         </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="tel:01712341234"><i class="fas fa-phone"></i> +88 01712341234</a>
+         <a href="tel:01612341234"><i class="fas fa-phone"></i> +88 01612341234</a>
+         <a href="mailto:"><i class="fas fa-envelope"></i> ryn@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i> Sylhey, Bngladesh</a>
+      </div>
+
+      <div class="box">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#reservation">Reservation</a>
+         <a href="#gallery">Gallery</a>
+         <a href="#contact">Contact</a>
+         <a href="#reviews">Reviews</a>
+      </div>
+
+      <div class="box">
+         <a href="#">Facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">Twitter <i class="fab fa-twitter"></i></a>
+         <a href="#">Instagram <i class="fab fa-instagram"></i></a>
+         <a href="#">Linkedin <i class="fab fa-linkedin"></i></a>
+      </div>
+
+   </div>
+
+   <div class="credit">&copy; copyright @ 2024 by Rafid Al Raiyan | all rights reseved!</div>
+
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
